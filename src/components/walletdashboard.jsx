@@ -59,7 +59,7 @@ function WalletDashboard() {
                 <h2 className="text-3xl font-light text-white">Wallet Dashboard</h2>
                 <button onClick={logout} className="rounded-lg bg-[#9b87f5]/80 hover:bg-[#9b87f5] text-white font-semibold py-2 px-6 transition">Logout & Lock</button>
             </header>
-            <div className="bg-yellow-100/80 border border-yellow-400 text-yellow-900 px-4 py-3 rounded-lg mb-8">
+            <div className="bg-violet-950  border-[#9b87f5] text-gray-200 hover:bg-[#9b87f5] hover:text-gray-900 font-semibold transition-colors px-4 py-3 rounded-lg mb-8">
                 <p className="font-bold">Your Mnemonic Phrase (Keep it secret!)</p>
                 <p className="font-mono text-sm break-words">{wallet.mnemonic}</p>    
             </div>

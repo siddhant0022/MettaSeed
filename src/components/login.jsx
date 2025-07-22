@@ -31,14 +31,14 @@ function Login() {
         return (
             <div className="max-w-md mx-auto mt-10 bg-base-200 p-8 rounded-xl shadow-lg">
                 <h2 className="text-2xl font-bold text-center mb-4">Save Your Secret Phrase</h2>
-                <div className="bg-transparent border-l-4 border-[#9b87f5] text-gray-200 hover:bg-[#9b87f5] hover:text-gray-900 font-semibold transition-colors p-4 rounded-md mb-6">
+                <div className="bg-violet-950  border-[#9b87f5] text-gray-200 hover:bg-[#9b87f5] hover:text-gray-900 font-semibold transition-colors p-4 rounded-md mb-6">
                     <p className="font-bold">IMPORTANT!</p>
                     <p>Write this 12-word phrase down. It's the only way to recover your wallet.</p>
                 </div>
                 <div className="bg-gray-800 p-4 rounded-lg text-center font-mono text-lg tracking-wider my-4">
                     {newMnemonic}
                 </div>
-                <button onClick={proceedWithNewMnemonic} className="w-full btn btn-primary mt-2">
+                <button onClick={proceedWithNewMnemonic} className="rounded-lg bg-[#9b87f5]/80 hover:bg-[#9b87f5] text-white font-semibold py-2 px-6 transition">
                     I've Saved It, Continue
                 </button>
             </div>
@@ -61,7 +61,7 @@ function Login() {
                         className="w-full p-3 border border-gray-600 rounded-lg bg-base-100 focus:ring-2 focus:ring-blue-500 transition"
                         rows={3}
                     />
-                    <button type="submit" disabled={loading} className="mt-4 w-full btn btn-primary">
+                    <button type="submit" disabled={loading} className="rounded-lg bg-[#9b87f5]/80 hover:bg-[#9b87f5] text-white font-semibold py-2 px-6 transition">
                         Import Wallet
                     </button>
                     {error && <p className="text-red-400 mt-2">{error}</p>}
@@ -74,7 +74,7 @@ function Login() {
                 <p className="text-sm text-white/70 mb-4">
                     Don&apos;t have a wallet? Create a new one to get started.
                 </p>
-                <button onClick={handleCreate} disabled={loading} className="w-full mt-4 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+                <button onClick={handleCreate} disabled={loading} className="rounded-lg bg-[#9b87f5]/80 hover:bg-[#9b87f5] text-white font-semibold py-2 px-6  transition">
                     {loading ? 'Creating...' : 'Create New Wallet'}
                 </button>
             </div>
